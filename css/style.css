@@ -19,7 +19,7 @@ h1{
 
 #calculatrice-div{
     background-color: indianred;
-    max-width: 500px;
+    max-width: 360px;
     margin : auto; 
     border-radius: 15px;
     padding :25px 15px; 
@@ -33,8 +33,13 @@ input{
     background-color: rgb(255, 184, 184);
     border : 1px solid rgb(165, 129, 129);
     border-radius: 12px;
-    padding : 10px 0 10px 10px;
-    margin : 0 25px 22px 25px
+    padding : 10px 10px 10px 0;
+    margin : 0 25px 22px 25px; 
+    font-size: 30px;
+    color :rgb(126, 53, 53); 
+    font-weight: 700;
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.8);
+    text-align: right;
 }
 
 #button-container-div{
@@ -49,7 +54,13 @@ input{
         border-radius: 12px;
         padding : 15px 0 ;
         font-size: 25px;
-        font-weight: 700;   
+        font-weight: 700;  
+        box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 1);
+
+        &:active{
+            box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 1);
+            transform: translateY(1px);
+        }
     }
 
     .plus{
